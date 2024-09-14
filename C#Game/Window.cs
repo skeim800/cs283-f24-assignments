@@ -13,13 +13,13 @@ using System.Data;
 public class Window : System.Windows.Forms.Form
 {
     private static int _windowHeight = 480;
-    public static int height 
+    public static int height
     {
         get { return _windowHeight; }
     }
 
     private static int _windowWidth = 640;
-    public static int width 
+    public static int width
     {
         get { return _windowWidth; }
     }
@@ -31,7 +31,7 @@ public class Window : System.Windows.Forms.Form
     }
 
     private Game _game = new Game();
-    private Timer _timer = new Timer(); 
+    private Timer _timer = new Timer();
     private DateTime _lastTime;
 
     public Window()
@@ -41,8 +41,14 @@ public class Window : System.Windows.Forms.Form
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
 
+    private Image frog;
+    private Image burger;
+
     private void InitializeComponent()
     {
+        frog = Image.FromFile("frog.png"); // retrieved from https://www.vecteezy.com/free-png/frog Frog PNGs by Vecteezy
+        burger = Image.FromFile("hamburger.png"); // retrieved from https://www.vecteezy.com/free-png/cut-out Cut Out PNGs by Vecteezy
+
         this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
         this.DoubleBuffered = true;
         this.ClientSize = new System.Drawing.Size(Window.width, Window.height);
@@ -64,14 +70,14 @@ public class Window : System.Windows.Forms.Form
         // GameLoop is implemented here
         DateTime current = DateTime.Now;
         TimeSpan dt = current - _lastTime;
-        _game.Update((float) dt.TotalSeconds);
+        _game.Update((float)dt.TotalSeconds);
         Refresh();
         _lastTime = current;
     }
 
     private void DrawCb(object sender, System.Windows.Forms.PaintEventArgs e)
     {
-        _game.Draw(e.Graphics); 
+        _game.Draw(e.Graphics, frog, burger);
     }
 
     private void ResizeCb(object sender, System.EventArgs e)
