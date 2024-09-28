@@ -1,5 +1,22 @@
 # cs283-f24-assignments
 Assignment framework for CS283 Game Programming
+### A04
+
+https://github.com/user-attachments/assets/b129b16d-92b6-47c5-9c4e-e5f5a37725df
+I found free assets on the Unity store and I used the following packages:
+
+[Low Poly Dungeon](https://brokenvector.itch.io/ultimate-low-poly-dungeon)
+[Easy Animated Enemy Pack](https://quaternius.itch.io/animated-easy-enemies?download#google_vignette)
+[Low Poly Tree Pack](https://brokenvector.itch.io/low-poly-tree-pack)
+[Low Poly Fire](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/low-poly-fire-244190)
+[Stylized Nature Textures](https://assetstore.unity.com/packages/2d/textures-materials/stylized-nature-textures-228680)
+[Low Poly Cliff Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-cliff-pack-67289)
+[Raw Wooden Furniture Free](https://assetstore.unity.com/packages/3d/props/furniture/raw-wooden-furniture-free-166329)
+[Customizable skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/customizable-skybox-174576)
+[Low Poly Road Pack](https://brokenvector.itch.io/low-poly-road-pack)
+[Stylized NPC - Peasant Nolant](https://www.turbosquid.com/3d-models/stylized-npc-peasant-nolant-2070554)
+
+
 ### A03
 https://github.com/user-attachments/assets/065a45fa-6223-45bf-9f9b-b6b04d8b5dca
 
