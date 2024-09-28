@@ -2,7 +2,8 @@
 Assignment framework for CS283 Game Programming
 ### A04
 
-https://github.com/user-attachments/assets/b129b16d-92b6-47c5-9c4e-e5f5a37725df
+https://github.com/user-attachments/assets/c71e3d1b-2900-43eb-8e1e-600b6f90be09
+
 I found free assets on the Unity store and I used the following packages:
 
 [Low Poly Dungeon](https://brokenvector.itch.io/ultimate-low-poly-dungeon)
