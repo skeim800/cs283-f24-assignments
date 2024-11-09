@@ -702,7 +702,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &487222332239498994
 Transform:
@@ -1470,7 +1470,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4841516796031980855}
   - component: {fileID: 2723795956483443609}
-  - component: {fileID: 1455275736980436941}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -1578,21 +1577,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000062258914, y: 0.027787175, z: -0.033708587}
     m_Extent: {x: 0.02056856, y: 0.036420178, z: 0.08940652}
   m_DirtyAABB: 0
---- !u!111 &1455275736980436941
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984477017981852230}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 4916845569733215604, guid: 1e306e56990a14971b69ff8b69e63353, type: 3}
-  m_Animations: []
-  m_WrapMode: 8
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &2129157802502868677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7751,7 +7735,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6807261357430145937
 Transform:
@@ -8243,7 +8227,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7399750065155444695
 Transform:
