@@ -4,7 +4,7 @@ Assignment framework for CS283 Game Programming
 ### A10
 
 https://github.com/user-attachments/assets/acc91e6f-1f3e-4c64-89fd-d17ed1672db6
-
+[Basic Low Poly Character](https://pierre-vandermaesen.itch.io/basic-low-poly-character)
 
 ### A09
 
