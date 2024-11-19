@@ -1,6 +1,11 @@
 # cs283-f24-assignments
 Assignment framework for CS283 Game Programming
 
+### A10
+
+https://github.com/user-attachments/assets/acc91e6f-1f3e-4c64-89fd-d17ed1672db6
+
+
 ### A09
 
 https://github.com/user-attachments/assets/e7b9a794-1e83-4381-9f7d-c82d0d24dc45
@@ -10,15 +15,15 @@ https://github.com/user-attachments/assets/e7b9a794-1e83-4381-9f7d-c82d0d24dc45
 
 https://github.com/user-attachments/assets/550757a8-074a-4abf-845d-8e4c1a6f66e7
 
-
-
 ### A07
 
 https://github.com/user-attachments/assets/c7632d92-c622-43c2-b4d2-8a80eb9d1a6a
 
+### A05
 
+https://github.com/user-attachments/assets/813fd1cb-f5da-46e7-a382-da0467675180
 
-
+https://github.com/user-attachments/assets/a6a75e2a-da16-40b6-897e-b4bed6aee199
 
 ### A04
 
