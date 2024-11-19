@@ -15,16 +15,12 @@ public class BehaviorUnique : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         m_btRoot.OpenBranch(
         BT.Selector().OpenBranch(
-            BT.Sequence().OpenBranch(
                 BT.If(InMageRange).OpenBranch(
                     BT.Call(Appear)
                 ),
-                BT.If(Appeared).OpenBranch(
-                    BT.Call(ShowMessage)
-                )
-            ),
                 BT.Call(Disappear)
             )
         );
@@ -49,19 +45,23 @@ public class BehaviorUnique : MonoBehaviour
     private void Appear()
     {
         hasAppeared = true;
-        gameObject.SetActive(true);
+        transform.GetChild(0).gameObject.SetActive(true);
+        ShowMessage();
     }
 
     private void ShowMessage()
     {
         mageText.gameObject.SetActive(true);
-        mageText.text = "Collect as many potatoes as you can without getting mauled by the Big Rat. Potatoes are the foundation of any great meal. Mashed potatoes, french fries, tater tots, wedges, smashed potatoes...";
+        mageText.text = "Potatoes are the foundation of any great meal! Mashed potatoes, " +
+            "french fries, tater tots, potato wedges, smashed potatoes...Sorry sorry. Ahem. Get to the top of the " +
+            "mountain and collect as many potatoes as you can without getting mauled by the Big Rat. " +
+            "Congratulations, you're a potato farmer now.";
     }
 
     private void Disappear()
     {
         hasAppeared = false;
-        gameObject.SetActive(false);
+        transform.GetChild(0).gameObject.SetActive(false);
         mageText.gameObject.SetActive(false);
     }
 }
