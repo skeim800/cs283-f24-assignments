@@ -27,7 +27,7 @@ public class CollectionGame : MonoBehaviour
     {
         if (other.CompareTag("Collectable"))
         {
-            Debug.Log("Collided with collectable object");
+            Debug.Log("Hit collectable object");
             points += 1;
             pointsText.text = points.ToString();
             other.GetComponent<Collider>().enabled = false;
