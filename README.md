@@ -1,6 +1,43 @@
 # cs283-f24-assignments
 Assignment framework for CS283 Game Programming
 
+### Final Game
+
+To play Rat-Turn of the Villagers! you need to know the following controls:
+- W, A, D to move forward and turn
+- scroll mouse up and down for looking up and down
+- R to launch dynamite
+- F to launch potatoes
+
+The goal is to turn all the rats back to villagers by colliding with them and also to defeat the evil wizard by hitting him with potatoes! You lose if you run out of health which will go down if the wizard hits you with crystal balls so watch out!
+
+The game lives in the Project scene. 
+
+<img width="823" alt="gamehome" src="https://github.com/user-attachments/assets/1a6b2c7c-a373-4e3d-8dca-adca13bff420" />
+
+<img width="824" alt="Screenshot 2024-12-13 at 10 55 40 PM" src="https://github.com/user-attachments/assets/ecbd8b27-8dd4-4abb-b379-eabdf9720a78" />
+
+<img width="824" alt="Screenshot 2024-12-13 at 10 54 18 PM" src="https://github.com/user-attachments/assets/10ed9ff1-f648-45d3-b4df-8a8c7e736886" />
+
+https://github.com/user-attachments/assets/5c09c284-79fe-4735-985f-72acf089ac6a
+
+https://github.com/user-attachments/assets/14d545f7-b72c-4414-a324-201338e0d0ec
+
+https://github.com/user-attachments/assets/511d6960-3dc5-4960-be74-f80717ed2b49
+
+
+I added the following features with the following scripts:
+
+- player and enemy health bars (HealthBar.cs) [Health Bar Tutorial and images](https://www.youtube.com/watch?v=BLfNP4Sc_iA))
+- player attack with throwing potatoes (PlayerAttack.cs, PotatoCollision.cs)
+- enemy attack with crystal orbs (EnemyBehavior.cs, MagicBallCollision.cs, MagicBallFollow.cs)
+- changing UI, restarting game, exiting game (GameManager.cs, Exit.cs)
+- transformation of rats back to villagers (Transformation.cs)
+- allow looking up and down with camera (RigidFollowCamera.cs)
+- enemy hovers (Hover.cs)
+- dynamite exploding when in contact with Rock (DynamiteCollision.cs, ThrowDynamite.cs, particle system)
+  
+
 ### A10
 
 https://github.com/user-attachments/assets/acc91e6f-1f3e-4c64-89fd-d17ed1672db6
