@@ -12,12 +12,10 @@ public class PlayerMotionController : MonoBehaviour
     public float turnSpeed = 100f;
     public float jumpForce = 5f;
     public float gravity = 9.8f;
+
     private Animator animator;
     private CharacterController controller;
-
-    private Vector3 velocity; 
-    private bool isGrounded;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,18 +44,18 @@ public class PlayerMotionController : MonoBehaviour
         else if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, -turnSpeed * Time.deltaTime, 0);
-            //IsMoving = true;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            moveDirection -= forward;
-            //transform.position -= forward * moveSpeed * Time.deltaTime;
             IsMoving = true;
         }
+        //else if (Input.GetKey(KeyCode.S))
+        //{
+        //    moveDirection -= forward;
+        //    //transform.position -= forward * moveSpeed * Time.deltaTime;
+        //    IsMoving = true;
+        //}
         else if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
-            //IsMoving = true;
+            IsMoving = true;
         }
 
         //Debug.Log($"isMoving: {IsMoving}");
@@ -69,20 +67,5 @@ public class PlayerMotionController : MonoBehaviour
         }
 
         animator.SetBool("IsMoving", IsMoving);
-
-        isGrounded = controller.isGrounded; 
-
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f; 
-        }
-
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            velocity.y = Mathf.Sqrt(jumpForce * 2f * gravity); 
-        }
-
-        velocity.y -= gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
     }
 }
